@@ -1,0 +1,15 @@
+{
+  "name": "template-app",
+  "version": "1.0.0",
+  "description": "React Template App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "Template"
+  ],
+  "author": "Khandaker Shahriar Shamit",
+  "license": "ISC"
+}
