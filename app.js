@@ -1,23 +1,7 @@
-const express = require("express");
-const app = express();
-const path = require("path");
-const port = process.env.PORT || 3000;
+import React from "react";
 
-app.listen(port, () => {
-    console.log(`The app server is running on port: ${port}`);
-});
+const App = () => {
+    return <div> Hello, World! </div>;
+};
 
-const DIST_DIR = path.join(__dirname, "docs");
-const HTML_FILE = path.join(DIST_DIR, "index.html");
-
-app.use(express.json());
-app.use(express.static("public"));
-app.use(express.static("docs"));
-
-app.get("/", (req, res) => {
-    res.sendFile(HTML_FILE, function(err) {
-        if (err) {
-            res.status(500).send(err);
-        }
-    });
-});
+export default App;
