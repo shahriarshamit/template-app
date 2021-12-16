@@ -4,8 +4,8 @@
   "description": "React Template App",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve  --hot --open --mode development",
-    "test": "webpack serve  --hot --open --mode production",
+    "start": "webpack serve --hot --open --mode development",
+    "test": "webpack serve --hot --open --mode production",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
